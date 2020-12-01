@@ -4,7 +4,8 @@
   "description": "this is json file for a blog static site generator in early phase",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ../src/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/dwskme/mycms/issues"
   },
-  "homepage": "https://github.com/dwskme/mycms#readme"
+  "homepage": "https://github.com/dwskme/mycms#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "glob": "^7.1.6",
+    "gray-matter": "^4.0.2",
+    "highlight.js": "^10.4.0",
+    "marked": "^1.2.5",
+    "path": "^0.12.7"
+  }
 }

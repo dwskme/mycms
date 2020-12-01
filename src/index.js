@@ -1,6 +1,10 @@
-import fs from 'fs'; // for importing files
+import fs from 'fs' // for importing files
 import matter from 'gray-matter' //for changing string and returning as obj
 import marked from 'marked' //for changing markdown into html
+import mkdirp from 'mkdirp' //for using mkdir -p
+import path from 'path' //for using path
+import glob from 'glob'
+
 //process the template
 
 
@@ -18,3 +22,5 @@ const readFile = filename => {
     const html = marked(parsed.content) //changes that object into html
     return { ...parsed, html }
 }
+
+readFile(path)
